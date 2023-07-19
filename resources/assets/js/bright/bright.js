@@ -126,8 +126,7 @@ function brightJs() {
         opacity: 0.6,
         helper: _gridSortHelper,
         update: _gridSortUpdateHandler
-      })
-      .disableSelection();
+      });
 
     $('[grid-sortable]')
       .sortable({
@@ -137,8 +136,7 @@ function brightJs() {
         opacity: 0.6,
         helper: _gridSortHelper,
         update: _gridSortUpdateHandler
-      })
-      .disableSelection();
+      });
 
     $('[sortables]')
       .sortable({
@@ -146,8 +144,7 @@ function brightJs() {
         handle: '[sortable]',
         placeholder: 'state-highlight',
         opacity: 0.6
-      })
-      .disableSelection();
+      });
   }
 
   if ($.fn.waypoint) {
