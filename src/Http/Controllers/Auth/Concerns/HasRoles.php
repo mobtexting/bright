@@ -22,6 +22,7 @@ trait HasRoles
             config('permission.table_names.model_has_permissions'),
             config('permission.column_names.model_morph_key'),
             'permission_id'
-        )->withPivot('is_exclude');
+        )->where('status', 1)
+        ->withPivot('is_exclude');
     }
 }
